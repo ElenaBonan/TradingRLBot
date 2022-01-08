@@ -55,13 +55,13 @@ The idea of the project is to make a reinforcement learning agent trade eight di
 
 # Dataset
 ## Data
-The data that we used to build our dataset was downloaded from [Binance](https://www.binance.com/), the biggest bitcoin exchange and altcoin crypto exchange in the world. The dataset provides the history of **hourly** prices in **USD** for the **top 8 cryptocurrencies** of the market ("BTC", "ETH", "BNB", "ADA", "XRP", "DOGE", "LINK", "LTC") and starts at **2020-01-01 00:00:00** and ends at **2021-06-30 23:00:00**.
+The data used to build our dataset were downloaded from [Binance](https://www.binance.com/), the biggest bitcoin and altcoin crypto exchange in the world. The dataset provides the history of **hourly** prices in **USD** for the **top 8 cryptocurrencies** of the market ("BTC", "ETH", "BNB", "ADA", "XRP", "DOGE", "LINK", "LTC") and starts at **2020-01-01 00:00:00** and ends at **2021-06-30 23:00:00**.
 
 ![](https://i.imgur.com/jXGoZBA.jpg)
 
 ## Preprocessing and feature engineering
 In order to feed to the network clean and meaningful data we have performed the following operations:
-1. Fill **missing values**. We have filled the missing values uding the forward fill method, which propagates the last valid observation forward.
+1. Fill **missing values**. We have filled the missing values using the forward fill method, which propagates the last valid observation forward.
 2. Add **technical indicators**. These indicators are pattern-based signals produced by the variation in price and volume. We have divided these indicators into two types:
     - **Short term indicators** To describe the variation of the price and value during the same day. We consider all the indicators offered by the library ta (over 90) and we selected the less correlated ones (cor <0.7) in the first month of data. We were left with 18 indicators.
     - **Long term indicators** To describe what happened in the previous month we use four famous indicators: smooth moving average, directional moving index, relative strength index and commodity channel index. We chose three different windows: 1 day, 7 days and 30 days. In this way, we obtained other 12 technical indicators
