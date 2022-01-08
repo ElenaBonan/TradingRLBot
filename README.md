@@ -67,7 +67,7 @@ In order to feed to the network clean and meaningful data we have performed the 
     - **Long term indicators** To describe what happened in the previous month we use four famous indicators: smooth moving average, directional moving index, relative strength index and commodity channel index. We chose three different windows: 1 day, 7 days and 30 days. In this way, we obtained other 12 technical indicators
 3. Add **percentage change** of the variables. To help the network to recognise the patterns, even if the absolute values are changing in time, we have calculated the daily change in percentage of price, volumes and all the technical indicators.
 4. Add **covariance between the coins** price. We have calculated the covariance among the different coins' closing prices, in order to provide information about the relationship among these cryptocurrencies.
-5. Eliminate **the first 30 days** of data. We couldnot consider the first 30 days since our metrics need a 30 days window period.
+5. Eliminate **the first 30 days** of data. We could not consider the first 30 days since our metrics need a 30 days window period.
 
 ![](https://i.imgur.com/82vkIxB.jpg)
 
