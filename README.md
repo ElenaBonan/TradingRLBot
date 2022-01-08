@@ -120,7 +120,7 @@ At the end of the experiment, the capital that the Portfolio is holding can be c
 
 ## Updating the state
 
-The state in each timestep is defined bya vector composed of:
+The state in each timestep is defined by a vector composed of:
 * The amount of cash in the portfolio
 * The amount of the assets in the portfolio
 * The price of assets (close values)
