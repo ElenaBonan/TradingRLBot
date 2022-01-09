@@ -160,12 +160,14 @@ The metrics used to evaluate the strategy of the agents are commonly used in the
 
 ## Training and Testing
 
-To test our models we used time series validation to assess the performance under different temporal circumstances. In a TSV, a number N of training-testing sets are ran and their results are averaged. This approach is far more robust than a simple testing and allows obtaining better results when tuning models.
+During hyperparameters tuning we used time series validation in order to assess the performance under different temporal circumstances. In a TSV, a number N of training-testing sets are ran and their results are averaged. This approach is far more robust than a simple testing and allows obtaining better results when tuning models.
 
 ![](https://i.imgur.com/CKTnveo.png)
 
 
 As it can be seen in the figure, there's an intentional gap between the training and the testing set. This is recommended in the industry to make sure that the two sets are more independent.
+
+Finally, to compare the different models we used two test sets, taking the two month after the period used for the hyperparameter tuning.
 
 ---
 # Hyperparameter tuning
