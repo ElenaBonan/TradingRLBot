@@ -1,6 +1,6 @@
 
 # TradingRLBot
-
+This is the final project of the postgraduate course "Artificial Intelligence with with Deep Learning" held by the UPC University. 
 # Table of contents
 - [Introduction and motivation](#introduction-and-motivation)
 - [Dataset](#dataset)
@@ -158,15 +158,9 @@ The metrics used to evaluate the strategy of the agents are commonly used in the
 * **Sortino ratio**: Almost identical to sharpe, but in this case only the negative volatily is penalizing the final value.[(More)](https://www.investopedia.com/terms/s/sortinoratio.asp#:~:text=What%20Is%20the%20Sortino%20Ratio,standard%20deviation%20of%20portfolio%20returns.)
 * **Max drawdown**: Maximum observed loss from a peak to a trough of a portfolio, before a new peak is attained.[(More)](https://www.investopedia.com/terms/m/maximum-drawdown-mdd.asp)
 
-## Training and Testing
-
-Testing steps evaluate the performance of a model trained with data from a previous period. It's important not to test the model with data prior to the training set, as it would result in data leaking. 
-
-When tuning models, tests are not recommended since the results of different experiments mught be overfitted to the test set.
-
 ## Time series validation
 
-In a TSV, a number N of training-testing sets are ran and their results are averaged. This approach is far more robust than a simple testing and allows obtaining better results when tuning models.
+To test our models we used time series validation to assess the performance under different temporal 	circumstances. In a TSV, a number N of training-testing sets are ran and their results are averaged. This approach is far more robust than a simple testing and allows obtaining better results when tuning models.
 
 ![](https://i.imgur.com/CKTnveo.png)
 
