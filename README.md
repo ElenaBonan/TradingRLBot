@@ -1,6 +1,6 @@
 
 # TradingRLBot
-This is the final project of the postgraduate course "Artificial Intelligence with with Deep Learning" held by the UPC University. 
+This is the final project of the postgraduate course "Artificial Intelligence with Deep Learning" held by the UPC University. 
 # Table of contents
 - [Introduction and motivation](#introduction-and-motivation)
 - [Dataset](#dataset)
